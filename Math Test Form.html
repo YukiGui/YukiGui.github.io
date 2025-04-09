@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <!-- START OF MATH TEST -->
+    <h1>Math Test</h1>
+    <form action="#" method="post">
+        <!-- Student Name Input -->
+        <div>
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="student_name" required>
+        </div>
+        
+        <!-- Multiple Choice Questions -->
+        <fieldset>
+            <legend>Question 1: What is 5 × 7?</legend>
+            <input type="radio" id="q1a" name="q1" value="a">
+            <label for="q1a">a) 12</label><br>
+            <input type="radio" id="q1b" name="q1" value="b">
+            <label for="q1b">b) 25</label><br>
+            <input type="radio" id="q1c" name="q1" value="c">
+            <label for="q1c">c) 35</label><br>
+            <input type="radio" id="q1d" name="q1" value="d">
+            <label for="q1d">d) 57</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 2: Solve for x: 2x + 5 = 15</legend>
+            <input type="radio" id="q2a" name="q2" value="a">
+            <label for="q2a">a) x = 5</label><br>
+            <input type="radio" id="q2b" name="q2" value="b">
+            <label for="q2b">b) x = 10</label><br>
+            <input type="radio" id="q2c" name="q2" value="c">
+            <label for="q2c">c) x = 7.5</label><br>
+            <input type="radio" id="q2d" name="q2" value="d">
+            <label for="q2d">d) x = 2</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 3: What is the area of a circle with radius 3? (Use π ≈ 3.14)</legend>
+            <input type="radio" id="q3a" name="q3" value="a">
+            <label for="q3a">a) 9.42</label><br>
+            <input type="radio" id="q3b" name="q3" value="b">
+            <label for="q3b">b) 18.84</label><br>
+            <input type="radio" id="q3c" name="q3" value="c">
+            <label for="q3c">c) 28.26</label><br>
+            <input type="radio" id="q3d" name="q3" value="d">
+            <label for="q3d">d) 37.68</label>
+        </fieldset>
+
+        <!-- Word Problem -->
+        <fieldset>
+            <legend>Word Problem:</legend>
+            <p>A train travels 120 miles in 2 hours. What is its average speed? Show your work.</p>
+            <textarea id="word-problem" name="word_problem" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <!-- Math Symbols Demonstration -->
+        <div>
+            <p>Math symbols used in this test:</p>
+            <ul>
+                <li>Multiplication: 5 &times; 7</li>
+                <li>Pi: &pi; ≈ 3.14</li>
+                <li>Not equal: 2 &ne; 3</li>
+            </ul>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Test</button>
+    </form>
+    <!-- END OF MATH TEST -->
+</body>
+</html>
