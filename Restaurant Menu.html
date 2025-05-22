@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Menus</title>
+    <style>
+        /* Shared menu styling */
+        .menu {
+            width: 400px;
+            height: 550px;
+            padding: 20px; /* Inner spacing */
+            margin: 30px;  /* Outer spacing */
+            border: 5px solid #f0a04b; /* Border with color */
+            border-radius: 15px; /* Rounded corners */
+            font-family: Arial, sans-serif;
+            color: #333;
+            overflow: auto; /* Ensures content fits */
+        }
+
+        /* Unique background images and properties */
+        #breakfast {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZyx77Ff9_w4vz3jzsfyvU2nza3h9qvtpzmg&s');
+            background-repeat: repeat-x;
+            background-position: center;
+        }
+        #lunch {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstI-VX7rjNfYkVremVsT-gpJJb67mrkWVMQ&s');
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+        #dinner {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFZsdQGTuk4Xj-RsUWbEVeo_CKj4gJrG8kNA&s');
+            background-repeat: no-repeat;
+            background-size: cover; /* Fills the entire div */
+        }
+
+        /* Food item styling */
+        h2 {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent */
+            padding: 10px;
+        }
+        ul {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 15px 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Breakfast Menu -->
+    <div id="breakfast" class="menu">
+        <h2>Breakfast</h2>
+        <ul>
+            <li>Pancakes with Maple Syrup</li>
+            <li>Avocado Toast</li>
+            <li>Fresh Fruit Bowl</li>
+            <li>Orange Juice</li>
+            <li>Coffee</li>
+        </ul>
+    </div>
+
+    <!-- Lunch Menu -->
+    <div id="lunch" class="menu">
+        <h2>Lunch</h2>
+        <ul>
+            <li>Caesar Salad</li>
+            <li>Grilled Chicken Sandwich</li>
+            <li>Vegetable Soup</li>
+            <li>Iced Tea</li>
+        </ul>
+    </div>
+
+    <!-- Dinner Menu -->
+    <div id="dinner" class="menu">
+        <h2>Dinner</h2>
+        <ul>
+            <li>Steak with Mashed Potatoes</li>
+            <li>Garlic Butter Shrimp</li>
+            <li>Chocolate Lava Cake</li>
+            <li>Red Wine</li>
+        </ul>
+    </div>
+</body>
+</html>
