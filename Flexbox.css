@@ -1,0 +1,26 @@
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Flex container for puzzle */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px; /* 根据图片大小调整 */
+}
+
+/* Optional styling */
+.flex-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Hide the faulty piece */
+.hide {
+  display: none;
+}
