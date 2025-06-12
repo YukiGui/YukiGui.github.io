@@ -7,16 +7,18 @@
   font-family: sans-serif;
 }
 
-/* Flexbox Puzzle Layout */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px; /* 150 × 4 */
+/* Puzzle container with CSS Grid: 4 columns, 3 rows */
+.puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(3, 133px);
+  gap: 0; /* 图片之间无间隙，可以按需调整 */
   border: 2px solid #ccc;
+  width: max-content; /* 适应内容宽度 */
 }
 
 /* Puzzle pieces */
-.flex-container img {
+.puzzle-container img {
   width: 150px;
   height: 133px;
   object-fit: cover;
@@ -27,3 +29,4 @@
 .hide {
   display: none;
 }
+
