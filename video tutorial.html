@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Embed a Video in Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>How to Embed a Video in Your Website</h1>
+        <p class="subtitle">A step-by-step guide to adding service-hosted videos to your web pages</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Embedding videos from services like YouTube, Vimeo, or Dailymotion can enhance your website's content. This tutorial will walk you through the process using YouTube as an example.</p>
+        </section>
+
+        <div class="steps-container">
+            <section class="step">
+                <h2>Step 1: Find the Video You Want to Embed</h2>
+                <p>Navigate to YouTube and find the video you'd like to embed on your website. Make sure the video has embedding enabled (most do by default).</p>
+                <div class="screenshot">
+                    <img src="images/step1-find-video.jpg" alt="YouTube video page showing share button">
+                    <p class="caption">Locate the video on YouTube</p>
+                </div>
+            </section>
+
+            <section class="step">
+                <h2>Step 2: Click the "Share" Button</h2>
+                <p>Below the video player, click the "Share" button to open the sharing options.</p>
+                <div class="screenshot">
+                    <img src="images/step2-share-button.jpg" alt="YouTube share button clicked showing options">
+                    <p class="caption">Click the Share button under the video</p>
+                </div>
+            </section>
+
+            <section class="step">
+                <h2>Step 3: Select "Embed" Option</h2>
+                <p>In the sharing options that appear, click on the "Embed" tab to access the embed code.</p>
+                <div class="screenshot">
+                    <img src="images/step3-embed-tab.jpg" alt="Share options with Embed tab highlighted">
+                    <p class="caption">Select the Embed tab from sharing options</p>
+                </div>
+            </section>
+
+            <section class="step">
+                <h2>Step 4: Copy the Embed Code</h2>
+                <p>YouTube will provide you with an iframe embed code. You can click "Copy" to copy it to your clipboard.</p>
+                <div class="screenshot">
+                    <img src="images/step4-copy-code.jpg" alt="Embed code box with copy button highlighted">
+                    <p class="caption">Copy the provided iframe code</p>
+                </div>
+            </section>
+
+            <section class="step">
+                <h2>Step 5: Paste the Code in Your HTML</h2>
+                <p>In your website's HTML file, paste the copied code where you want the video to appear. The code will look something like this:</p>
+                <pre><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+                <div class="screenshot">
+                    <img src="images/step5-paste-code.jpg" alt="HTML editor with embed code pasted">
+                    <p class="caption">Paste the code in your HTML file</p>
+                </div>
+            </section>
+
+            <section class="step">
+                <h2>Step 6: Save and View Your Page</h2>
+                <p>Save your HTML file and open it in a browser to see the embedded video. You can adjust the width and height attributes in the iframe tag to change the player size.</p>
+                <div class="screenshot">
+                    <img src="images/step6-final-result.jpg" alt="Browser showing embedded video working">
+                    <p class="caption">The final embedded video on your webpage</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="example">
+            <h2>Example Embedded Video</h2>
+            <p>Here's the video we used in this tutorial, embedded using the method described above:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Website Video Embedding Tutorial. All rights reserved.</p>
+    </footer>
+</body>
+</html>
