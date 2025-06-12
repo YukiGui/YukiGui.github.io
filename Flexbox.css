@@ -1,24 +1,26 @@
-/* Grid layout */
+/* Grid layout: 3 sections vertically stacked */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
-/* Info and date sections */
+/* Info + Date styling */
 .info, .date {
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
-/* Flex container for puzzle */
+/* Flexbox Puzzle Layout */
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 400px; /* 100px × 4 列 */
+  flex-wrap: wrap;            
+  width: 400px;               
+  gap: 0;                    
+  border: 2px solid #ccc;
 }
 
 /* Puzzle pieces */
@@ -26,10 +28,10 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
 }
 
-/* Hide the bad piece */
+/* Hide wrong puzzle piece */
 .hide {
-  display: none;
-}
+  displ
+
