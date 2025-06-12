@@ -4,23 +4,32 @@
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Info and date sections */
+.info, .date {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 /* Flex container for puzzle */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  width: 300px; /* 根据图片大小调整 */
+  width: 400px; /* 100px × 4 列 */
 }
 
-/* Optional styling */
+/* Puzzle pieces */
 .flex-container img {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  border: 1px solid #ccc;
 }
 
-/* Hide the faulty piece */
+/* Hide the bad piece */
 .hide {
   display: none;
 }
