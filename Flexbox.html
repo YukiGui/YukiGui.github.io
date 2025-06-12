@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Grid and Flex Puzzle</title>
-  <link rel="stylesheet" href="Flexbox.css">
+  <meta charset="UTF-8" />
+  <title>CSS Grid Puzzle</title>
+  <style>
+    /* 整体大容器，垂直3部分 */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+      font-family: sans-serif;
+      max-width: max-content; /* 防止撑满全屏 */
+      margin: 0 auto;
+    }
+
+    /* 图片网格容器：4列3行 */
+    .puzzle-container {
+      display: grid;
+      grid-template-columns: repeat(4, 150px);
+      grid-template-rows: repeat(3, 133px);
+      gap: 0;
+      border: 2px solid #ccc;
+      width: max-content;
+    }
+
+    /* 图片样式 */
+    .puzzle-container img {
+      width: 150px;
+      height: 133px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+    }
+
+    /* 隐藏错的拼图 */
+    .hide {
+      display: none;
+    }
+
+    /* 完成日期样式 */
+    .date {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <div class="puzzle-container">
-    
-    <!-- Section 1: Name and Puzzle -->
+  <div class="grid-container">
+    <!-- Section 1: 标题 -->
     <section class="info">
       <h1>Puzzle: Snowman</h1>
     </section>
 
-    <!-- Section 2: Puzzle with Flexbox -->
+    <!-- Section 2: 图片拼图 -->
     <section class="puzzle">
       <div class="puzzle-container">
-        <img src="4.4_puzzle2/puzzle2_K.jpg" alt="piece 1">
-        <img src="4.4_puzzle2/puzzle2_M.jpg" alt="piece 2">
-        <img src="4.4_puzzle2/puzzle2_E.jpg" alt="piece 3">
-        <img src="4.4_puzzle2/puzzle2_G.jpg" alt="piece 4">
-        <img src="4.4_puzzle2/puzzle2_A.jpg" alt="piece 5">
-        <img src="4.4_puzzle2/puzzle2_D.jpg" alt="piece 6">
-        <img src="4.4_puzzle2/puzzle2_L.jpg" alt="piece 7">
-        <img src="4.4_puzzle2/puzzle2_B.jpg" alt="piece 8">
-        <img src="4.4_puzzle2/puzzle2_F.jpg" alt="piece 9">
-        <img src="4.4_puzzle2/puzzle2_J.jpg" alt="piece 10">
-        <img src="4.4_puzzle2/puzzle2_H.jpg" alt="piece 11">
-        <img src="4.4_puzzle2/puzzle2_I.jpg" alt="piece 12">
-        <img src="4.4_pizzle2/puzzle2_C.jpg" class="hide" alt="bad piece">
-        
-      </div>
-    </section>
-
-    <!-- Section 3: Completion Date -->
-    <section class="date">
-      <p>Completed on: June 12, 2025</p>
-    </section>
-
-  </div>
-</body>
-</html>
+        <img src="4.4_puzzle2/puzzle2_K.jpg" alt="piece 1" />
+        <img src="4.4_puzzle2/puzzle2_M.jpg" alt="piece 2" />
+        <img src="4.4_puzzle2/puzzle2_E.jpg" alt="piece 3" />
+        <img src="4.4_puzzle2/puzzle2_G.jpg" alt="piece 4" />
+        <img src="4.4_puzzle2/puzzle2_A.jpg" alt="piece 5" />
+        <img src="4.4_puzzle2/puzzle2_D.jpg" alt="piece 6" />
+        <img src="4.4_puzzle2/puzzle2_L.jpg" alt="piece 7" />
+        <img src="4.4
